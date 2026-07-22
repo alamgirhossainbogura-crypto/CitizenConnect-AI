@@ -1,0 +1,35 @@
+[
+  {
+    "id": "old_age_allowance",
+    "name_bn": "বয়স্ক ভাতা কার্যক্রম",
+    "name_en": "Old Age Allowance Program",
+    "ministry": "সমাজসেবা অধিদপ্তর",
+    "min_age": 62,
+    "max_income": 10000,
+    "required_documents": ["জাতীয় পরিচয়পত্র (NID)", "এসএসবি/ব্যাংক অ্যাকাউন্ট নম্বর", "পাসপোর্ট সাইজ ছবি"],
+    "deadline_days": 30,
+    "portal_url": "https://dss.gov.bd"
+  },
+  {
+    "id": "tcb_family_card",
+    "name_bn": "টিসিবি ফ্যামিলি কার্ড",
+    "name_en": "TCB Family Card Program",
+    "ministry": "বাণিজ্য মন্ত্রণালয়",
+    "min_age": 18,
+    "max_income": 15000,
+    "required_documents": ["NID কার্ডের কপি", "ইউনিয়ন/পৌরসভা চেয়ারম্যান সনদ", "মোবাইল নম্বর"],
+    "deadline_days": 15,
+    "portal_url": "https://tcb.gov.bd"
+  },
+  {
+    "id": "krishi_subsidies",
+    "name_bn": "কৃষি ভর্তুকি ও প্রণোদনা",
+    "name_en": "Agricultural Subsidy Program",
+    "ministry": "কৃষি মন্ত্রণালয়",
+    "min_age": 18,
+    "max_income": 25000,
+    "required_documents": ["কৃষক কার্ড/কৃষি কার্ড", "জমির খতিয়ান বা ইজারা পত্র", "ব্যাংক অ্যাকাউন্ট"],
+    "deadline_days": 45,
+    "portal_url": "https://dae.gov.bd"
+  }
+]
