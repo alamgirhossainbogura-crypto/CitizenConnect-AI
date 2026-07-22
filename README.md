@@ -63,6 +63,13 @@ PORT=3000
 4. **Run the Application:**
    npm start
 Open http://localhost:3000 in your browser.
-📽️ Demo & Submission
+
+# 📽️ Demo & Submission
 ​Live App URL: (Add your GitHub Pages / Vercel link here)
 ​Video Presentation: (Add your 2-3 min Devpost/YouTube demo link here)
+
+# ​📄 License
+​This project is licensed under the MIT License - see the LICENSE file for details.
+​<p align="center">
+Made with ❤️ for Bangladesh 🇧🇩
+</p>
