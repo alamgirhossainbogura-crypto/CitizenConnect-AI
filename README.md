@@ -1,75 +1,81 @@
 # 🇧🇩 CitizenConnect AI
-> Empowering Citizens through Smart Assistance, AI-Driven Public Services & Emergency Safety.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Powered By](https://img.shields.io/badge/AI-Google%20Gemini%20API-blue)](https://ai.google.dev/)
-[![Status](https://img.shields.io/badge/Status-In%20Development-green)]()
+An AI-powered public service assistant that simplifies complex Bangladesh government welfare application forms, checks service eligibility in plain Bengali, provides a 1-click emergency safety desk, and implements a sustainable ad-supported monetization model.
 
----
-
-## 📌 Overview
-**CitizenConnect AI** is a localized, AI-powered public assistance platform designed to simplify complex government paperwork, aid, and essential public service applications for citizens in Bangladesh. 
-
-Navigating government portals and applications can be daunting due to language barriers, complex instructions, and safety concerns. **CitizenConnect AI** bridges this gap using advanced Natural Language Processing (NLP) to provide seamless, step-by-step guidance in Bengali, alongside integrated emergency assistance.
+🏆 Built for Global AI Hackathons.
 
 ---
 
-## ✨ Key Features
+## 🌟 Key Features
 
-* 🤖 **Smart Form Assistance (Bengali NLP):** Simplifies complex government application processes (e.g., TCB Cards, Old-Age Allowance, Scholarships) with intelligent step-by-step guidance.
-* 🛡️ **Responsible & Secure AI:** Prioritizes user privacy by retaining control over sensitive data (NID, personal credentials) before final submission.
-* 🆘 **Emergency & Citizen Safety Desk:** Instant access to national helplines (999, 333, 109) and guidance during emergency situations.
-* 🌐 **Localized Accessibility:** Built specifically for non-technical citizens using intuitive UI and localized prompts.
-
----
-
-## 🛠️ Tech Stack & Architecture
-
-* **Frontend:** HTML5, CSS3, JavaScript (or Framework of choice)
-* **AI Engine:** Google Gemini API (Gemini 1.5 Flash / Pro)
-* **Backend:** Node.js / Express.js
-* **Version Control:** Git & GitHub
+* **🤖 Smart AI Service Assistant:** Plain Bengali guidance powered by Google Gemini API to help citizens understand eligibility and documentation for social safety net programs (e.g., Old Age Allowance, TCB Family Cards, Agriculture Subsidies).
+* **🆘 Emergency Safety Desk:** Quick 1-click direct dialing to essential national emergency helplines (**999**, **333**, **109**) with built-in digital safety guidelines.
+* **💰 Google AdSense Monetization:** Integrated advertisement slot placeholders (`AdBanner`) ensuring the platform remains **100% free** for all citizens while remaining financially self-sustainable.
+* **📱 Responsive & Accessible UI:** Designed using Next.js 15 and Tailwind CSS for seamless experience across mobile phones and modern browsers.
 
 ---
 
-## 💼 Business & Sustainability Model
+## 📁 Repository Architecture
 
-To ensure long-term viability while keeping the service 100% free for all citizens:
-
-1. **Ad-Supported Model (Freemium):** Non-intrusive banner ad placements (Google AdSense integration) at the bottom layer of the application for passive revenue.
-2. **Bootstrapped Seed Funding:** Initial prototype research & basic deployment were bootstrapped through a local micro-grant / Friends & Family angel support.
-3. **Future Scalability:** Potential for non-profit impact grants and B2B API integrations for local civic organizations and NGOs.
+text
+citizen-connect-ai/
+├── app/
+│   ├── api/eligibility/     # Backend Route for Gemini API Processing
+│   ├── dashboard/           # Option 1: Smart AI Assistant Interface
+│   ├── safety/              # Option 2: Emergency Safety & Helpline Interface
+│   └── page.tsx             # Main Landing Page with Dual Option Navigation
+├── components/
+│   ├── AdBanner.tsx         # AdSense Slot Component (Monetization Layer)
+│   └── SafetyDesk.tsx       # Helpline Component with Direct Call Triggers
+├── data/
+│   └── helplines.json       # Emergency Helplines Data Structure
+├── database/
+│   └── services.json        # Government Schemes & Eligibility Rules Database
+├── lib/
+│   ├── gemini.ts            # Google Gemini 2.5 Flash SDK Setup
+│   └── types.ts             # TypeScript Interfaces & Definitions
+├── locales/
+│   └── bn.json              # Bengali Localization Strings
+├── AGENTS.md                # AI Agent Directives & Guardrails
+├── GEMINI.md                # Developer Guidelines & Gemini AI System Prompting
+├── proxy.ts                 # Next.js Middleware for Security & Route Guarding
+├── eslint.config.mjs        # ESLint Flat Configuration
+├── next.config.ts           # Next.js Production Configuration
+├── postcss.config.mjs       # Tailwind CSS PostCSS Pipeline
+├── tsconfig.json            # TypeScript Strict Compiler Settings
+├── .gitignore               # Git Excluded Files Rules
+├── package.json             # Project Dependencies & Scripts
+└── README.md                # Project Documentation
 
 ---
 
-## 🚀 Getting Started
+# 🛠️ Tech Stack
+​Framework: Next.js 15 (App Router) + React 19
+​Styling: Tailwind CSS
+​AI Model: Google Gemini 2.5 Flash (@google/genai)
+​Deployment Platform: Vercel
 
-### Prerequisites
-* Node.js (v18 or higher)
-* Google Gemini API Key
+# ​🚀 Getting Started
+​Prerequisites
+​Node.js 20+
+​A Google Gemini API Key
+​Installation
+1. **Clone the repository:**
+git clone [https://github.com/your-username/citizen-connect-ai.git](https://github.com/your-username/citizen-connect-ai.git)
+cd citizen-connect-ai
+2. **Install dependencies:**
+ npm install
+3. **Set up Environment Variables:
+Create a .env.local file in the root directory:**
+GEMINI_API_KEY=your_google_gemini_api_key
+4. **Run local development server:**
+npm run dev
 
-### Installation
+Open http://localhost:3000 to view the application in your browser.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/your-username/citizen-connect-ai.git](https://github.com/your-username/citizen-connect-ai.git)
-   cd citizen-connect-ai
-2. **Install Dependencies:**
-   npm install
-3. **Configure Environment Variables:**
-Create a .env file in the root directory and add your API credentials:
-GEMINI_API_KEY=your_google_gemini_api_key_here
-PORT=3000
-4. **Run the Application:**
-   npm start
-Open http://localhost:3000 in your browser.
-
-# 📽️ Demo & Submission
-​Live App URL: (Add your GitHub Pages / Vercel link here)
-​Video Presentation: (Add your 2-3 min Devpost/YouTube demo link here)
-
-# ​📄 License
-​This project is licensed under the MIT License - see the LICENSE file for details.
-​<p align="center">
-Made with ❤️ for Bangladesh 🇧🇩
-</p>
+# 💰 Monetization & Business Sustainability
+​Ad-Supported Revenue Model: Bottom banner slot reserved for Google AdSense integration ensures operational costs are covered without charging end users.
+​Initial Seed Fund: Bootstrapped development supported by early micro-investment/grants for research and public service adaptation.
+# ​🛡️ Privacy & Safety Note
+​CitizenConnect AI never asks for, stores, or processes sensitive credentials such as NID numbers, bank passwords, or PINs. All form guidance is purely informational to ensure citizens retain full control.
+​Made with ❤️ for Bangladesh 🇧🇩
