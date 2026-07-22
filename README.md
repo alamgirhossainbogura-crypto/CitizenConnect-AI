@@ -2,8 +2,6 @@
 
 An AI-powered public service assistant that simplifies complex Bangladesh government welfare application forms, checks service eligibility in plain Bengali, provides a 1-click emergency safety desk, and implements a sustainable ad-supported monetization model.
 
-🏆 Built for Global AI Hackathons.
-
 ---
 
 ## 🌟 Key Features
